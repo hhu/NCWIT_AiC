@@ -1,0 +1,180 @@
+.sponsor-img {
+    max-width: 100%;
+    max-height: 20vh;
+    margin: 10px;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+.socials-icons {
+    padding-left: 0;
+}
+.socials-icons li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.socials-icons li a i.fa {
+    font-size: 40px;
+}
+.socials-icons li a {
+    background-color: #2E8CCB;
+}
+
+.navlinks {
+    position: absolute;
+    top: 43%;
+}
+.navbar-collapse {
+    width: 93vw;
+}
+.navbar-toggle {
+    float: none;
+}
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-left: 0;
+}
+.fulllink {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+}
+
+.navbar {
+    padding: 0;
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    min-height: 150px;
+}
+.navbar-collapse.in {
+    background: white;
+}
+
+.title {
+    color: #2E8CCB;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+    color: #2E8CCB;
+    font-weight: bold;
+    font-size: 5vh;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 58px;
+    text-transform: uppercase;
+}
+.textwall {
+    text-align: left;
+}
+@media print {
+    .print-pagebreak {
+        page-break-before: always;
+    }
+}
+.agenda {}
+.agenda > thead > tr > th {
+    text-align: center;
+    font-size: 30px;
+    background-color: #2E8CCB;
+    color: white;
+    font-weight: bold;
+    max-width: 100%;
+}
+.agenda > thead > tr > .time {
+    width: 20%;
+}
+.agenda > thead > tr > .event {
+    width: 50%;
+}
+.agenda > thead > tr > .location {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .agenda > thead > tr > .time {
+        width: 25%;
+    }
+    .agenda > thead > tr > .event {
+        width: 35%;
+    }
+    .agenda > thead > tr > .location {
+        width: 25%;
+    }
+    .agenda > thead > tr > .expander {
+        width: 5%;
+    }
+}
+
+
+.agenda > tbody > tr > td {
+    font-size: 20px;
+}
+.expansion {
+    font-size: 10vw !important;
+    color: #0000EE;
+}
+.committee > tbody > tr > td {
+    font-size: 20px;
+}
+.winnerrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.winner {
+    padding: 15px;
+    display: flex;
+}
+.innerwinner {
+    padding: 15px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+.desktoponly {display: initial;}
+.mobileonly {display: none;}
+
+@media screen and (max-width: 768px) {
+
+    .desktoponly {display: none;}
+    .mobileonly {display: block;}
+
+}
+
+.fullpageimg {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+    .fullpageimg {
+        width: 100%;
+    }
+}
