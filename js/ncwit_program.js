@@ -35,9 +35,17 @@ const sponsor_tier_header_template = `
 `;
 
 
-const mobilerow_template = `
+
+
+const mobilerow_templateORIGINAL = `
     <td data-toggle="modal" data-target="#modal{{id}}"> {{Title}} </td>
     <td class="expansion" data-toggle="modal" data-target="#modal{{id}}"> ⇲ </td>
+`;
+const mobilerow_template = `
+    <td> {{Title}} <br />
+        <span style="font-size:0.7em; font-style:italic; color:#555555"> {{Name}} </span><br />
+        <span style="font-size:0.7em; color:#555555">{{Desc}}</span>
+     </td>
 `;
 const agendaItemTemplate = `
 <!-- Modal -->
