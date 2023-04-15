@@ -107,59 +107,7 @@
 
 
 
-		<!--
-		<-!-- Agenda --!->
-		<section id="agenda">
-			<div class="container">
-
-				<div class="row text-center print-pagebreak"> <-!-- agenda --!->
-		            <div class="col-md-10 col-md-offset-1">
-                        <a data-toggle="collapse" href="#agenda">
-						    <h1 class="section-title metadata"> {{affiliate_name}} Affiliate Event Agenda </h1>
-                        </a>
-                    </div>
-                </div>
-	            <hr class="full">
-                <div class="collapse in" id="agenda">
-                    <div class="row desktoponly" id="desktopagenda">
-                        <div>
-                            <table class="table agenda">
-                                <thead>
-                                    <tr>
-                                        <th class="event"> Event </th>
-                                    </tr>
-                                </thead>
-                                <tbody id="agendabody">
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <script type="module"> import {makeAgenda} from "./js/ncwit_program.js"; makeAgenda("#agendabody"); </script>
-                    </div>	<-!-- row --!->
-
-                    <div class="row mobileonly" id="mobileagenda">
-                        <div>
-                            <table class="table agenda">
-                                <thead>
-                                    <tr>
-                                        <th class="event"> Event </th>
-                                        <th class="expander"></th>
-                                    </tr>
-                                </thead>
-                                <tbody id="mobileagendabody">
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <script type="module"> import {makeMobileAgenda} from "./js/ncwit_program.js"; makeMobileAgenda("#mobileagendabody"); </script>
-                    </div>	<-!-- row --!->
-                </div>
-            </div>  <-!-- container --!->
-        </section>  <-!-- agenda --!->
-		-->
-
-
-
+		
 		<!-- Agenda -->
 		<section id="agenda">
 			<div class="container">
@@ -195,20 +143,22 @@
                                 <thead>
                                     <tr>
                                         <th class="event"> Event </th>
-                                        <!--<th class="expander"></th>-->
+                                        <th class="expander"></th>
                                     </tr>
                                 </thead>
-                                <tbody id="agendabody">  <!-- </tbody>id="mobileagendabody">  -->
+                                <tbody id="mobileagendabody">
                                 </tbody>
                             </table>
                         </div>
 
-                        <script type="module"> import {makeAgenda} from "./js/ncwit_program.js"; makeAgenda("#agendabody"); </script>
-						<!--<script type="module"> import {makeMobileAgenda} from "./js/ncwit_program.js"; makeMobileAgenda("#mobileagendabody"); </script>-->
+                        <script type="module"> import {makeMobileAgenda} from "./js/ncwit_program.js"; makeMobileAgenda("#mobileagendabody"); </script>
                     </div>	<!-- row -->
                 </div>
             </div>  <!-- container -->
         </section>  <!-- agenda -->
+		
+
+
 
 
 
