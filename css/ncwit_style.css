@@ -65,9 +65,9 @@
 .section-title {
     color: #2E8CCB;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 3vh;
     font-family: 'Roboto', sans-serif;
-    padding-top: 58px;
+    padding-top: 50px;
     text-transform: uppercase;
 }
 .textwall {
